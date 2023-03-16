@@ -7,11 +7,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Forms</title>
   <link rel="stylesheet" href="form.css">
+   <script type="text/javascript">
+    function validate(){
+      var Name=document.getElementById("name");
+      var Username=document.getElementById("uname");
+      var Email=document.getElementById("email");
+      var Password=document.getElementById("pwd");
+      var ConfirmPassword=document.getElementById("cpwd")
+      var Message=document.getElementById("mess")
+      if(Name.value==""||Username.value==""||Email.value==""||Password.value==""||ConfirmPassword.value==""||Message.value==""){
+        alert("Try Again");
+        return false;
+      }
+      else{
+        return true;
+
+      }
+    }
+  </script>
 </head>
 <body>
 
 
-<form action="">
+<form action=""onsubmit=" return validate()">
   <legend>Bootsrap 4 Form Validation Demo</legend>
 <hr>
   <label for="name">Name</label>
