@@ -22,9 +22,7 @@ input, textarea, input[type=submit]{
 form{
     background-color: white;
     border-radius: 10px;
-    padding-right: 30px;
     margin-right:350px;
-
     margin-left: 350px;
     padding: 20px;
 
@@ -35,3 +33,6 @@ p{
     font-size: 20px;
     font-family:  sans-serif;
 }
+legend{{
+ text-align: center;
+ }
